@@ -1,14 +1,14 @@
 package com.ef.input
 
+import com.ef.di.DependencyFactory
 import spock.lang.Specification
 
-class InputValidatorTest extends Specification{
+class InputValidatorTest extends Specification {
 
     InputValidator validator
 
     def setup() {
-        List<ParserInput> inputs = Arrays.asList(new Duration(), new StartDate(), new Threshold(), new AccessLogPath())
-        validator = new InputValidator(inputs)
+        validator = DependencyFactory.createInputValidator()
     }
 
     def 'when params are not informed should return error'(){

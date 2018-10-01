@@ -2,7 +2,7 @@ package com.ef.input
 
 import spock.lang.Specification
 
-class AccessLogPathTest extends Specification{
+class AccessLogPathTest extends Specification {
 
     AccessLogPath accessLogPath
 

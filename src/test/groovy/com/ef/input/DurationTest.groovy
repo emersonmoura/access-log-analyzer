@@ -3,7 +3,7 @@ package com.ef.input
 
 import spock.lang.Specification
 
-class DurationTest extends Specification{
+class DurationTest extends Specification {
 
     Duration duration
 

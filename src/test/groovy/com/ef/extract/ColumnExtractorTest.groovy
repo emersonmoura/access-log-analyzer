@@ -3,7 +3,7 @@ package com.ef.extract
 import static LogColumn.*
 import spock.lang.Specification
 
-class ColumnExtractorTest extends Specification{
+class ColumnExtractorTest extends Specification {
 
     private date = '2017-01-01 00:00:11.763'
     private ip = '192.168.234.82'

@@ -1,13 +1,15 @@
 package com.ef;
 
-import com.ef.di.DependencyFactory;
 import com.ef.execute.ParserExecutor;
-import java.io.IOException;
+
+import static com.ef.di.DependencyFactory.createInput;
+import static com.ef.di.DependencyFactory.createInputValidator;
+import static com.ef.di.DependencyFactory.createParserFile;
 
 public class Parser {
 
-    public static void main(String[] args) throws IOException {
-        new ParserExecutor(DependencyFactory.createInputValidator()).execute(args);
+    public static void main(String[] args) {
+        new ParserExecutor(createInputValidator(), createParserFile(), createInput()).execute(args);
     }
 
 }

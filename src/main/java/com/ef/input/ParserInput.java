@@ -12,4 +12,11 @@ public interface ParserInput {
     }
 
     String extractValue(String arg);
+
+    default boolean InputNameIs(String name) {
+        return name != null && name.contains(getType().getInputName());
+    }
+
+    InputType getType();
+
 }

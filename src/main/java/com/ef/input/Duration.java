@@ -2,11 +2,12 @@ package com.ef.input;
 
 import java.util.stream.Stream;
 
+import static com.ef.input.InputType.DURATION;
+
 public class Duration implements ParserInput {
 
     public static final String HOURLY = "hourly";
     public static final String DAILY = "daily";
-    public static final String DURATION = "--duration=";
     public static final String EMPTY = "";
 
     @Override
@@ -20,7 +21,12 @@ public class Duration implements ParserInput {
     }
 
     public String extractValue(String arg) {
-        return arg.replaceAll(DURATION, EMPTY);
+        return arg.replaceAll(DURATION.getInputName(), EMPTY);
+    }
+
+    @Override
+    public InputType getType() {
+        return DURATION;
     }
 
     private boolean invalidValues(String arg) {
@@ -28,7 +34,7 @@ public class Duration implements ParserInput {
     }
 
     private boolean containsDuration(String arg) {
-        return arg != null && arg.contains(DURATION);
+        return arg != null && arg.contains(DURATION.getInputName());
     }
 
     private boolean containsValidValues(String arg) {

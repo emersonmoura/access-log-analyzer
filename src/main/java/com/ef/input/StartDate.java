@@ -4,10 +4,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.stream.Stream;
 
+import static com.ef.input.InputType.START_DATE;
+
 public class StartDate implements ParserInput {
 
-    public static final String START_DATE = "--startDate=";
     public static final String DATE_FORMAT = "yyyy-MM-dd.HH:mm:ss";
+    public static final String EMPTY = "";
 
     @Override
     public void validate(String[] args) {
@@ -20,15 +22,20 @@ public class StartDate implements ParserInput {
     }
 
     public String extractValue(String arg) {
-        return arg.replaceAll(START_DATE, "");
+        return arg.replaceAll(START_DATE.getInputName(), EMPTY);
     }
 
     private boolean invalidValues(String arg) {
         return containsStartDate(arg) && !containsValidValues(arg);
     }
 
+    @Override
+    public InputType getType() {
+        return START_DATE;
+    }
+
     private boolean containsStartDate(String arg) {
-        return arg != null && arg.contains(START_DATE);
+        return arg != null && arg.contains(START_DATE.getInputName());
     }
 
     private boolean containsValidValues(String arg) {

@@ -2,7 +2,7 @@ package com.ef.input
 
 import spock.lang.Specification
 
-class ThresholdTest extends Specification{
+class ThresholdTest extends Specification {
 
     Threshold threshold
 

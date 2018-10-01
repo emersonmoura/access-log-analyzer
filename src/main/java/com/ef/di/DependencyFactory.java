@@ -1,7 +1,9 @@
 package com.ef.di;
 
+import com.ef.execute.ParserFile;
 import com.ef.input.AccessLogPath;
 import com.ef.input.Duration;
+import com.ef.input.Input;
 import com.ef.input.InputValidator;
 import com.ef.input.ParserInput;
 import com.ef.input.StartDate;
@@ -18,5 +20,13 @@ public class DependencyFactory {
 
     public static List<ParserInput> createParserInputs() {
         return Arrays.asList(new Duration(), new StartDate(), new Threshold(), new AccessLogPath());
+    }
+
+    public static ParserFile createParserFile(){
+        return new ParserFile();
+    }
+
+    public static Input createInput(){
+        return new Input(createParserInputs());
     }
 }

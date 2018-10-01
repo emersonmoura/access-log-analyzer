@@ -2,9 +2,10 @@ package com.ef.input;
 
 import java.util.stream.Stream;
 
+import static com.ef.input.InputType.*;
+
 public class AccessLogPath implements ParserInput {
 
-    public static final String ACCESS_LOG = "--accesslog=";
     public static final String EMPTY = "";
 
     @Override
@@ -15,7 +16,13 @@ public class AccessLogPath implements ParserInput {
     }
 
     public String extractValue(String arg) {
-        return arg.replaceAll(ACCESS_LOG, EMPTY);
+        return arg.replaceAll(ACCESS_LOG.getInputName(), EMPTY);
+    }
+
+
+    @Override
+    public InputType getType() {
+        return ACCESS_LOG;
     }
 
     private boolean invalidValues(String arg) {
@@ -23,7 +30,7 @@ public class AccessLogPath implements ParserInput {
     }
 
     private boolean containsDuration(String arg) {
-        return arg != null && arg.contains(ACCESS_LOG);
+        return arg != null && arg.contains(ACCESS_LOG.getInputName());
     }
 
     private boolean containsValidValues(String arg) {

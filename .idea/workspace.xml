@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1975d582-4d60-415a-9e23-cea50dd657f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/Extractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/InputValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/ef/InputValidatorTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/ef/input/InputValidatorTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ef/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ef/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/parser.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/parser.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -30,24 +33,26 @@
     <session id="1989763784">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="3" />
           <entry key="groovy" value="8" />
-          <entry key="java" value="22" />
+          <entry key="java" value="23" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="11" />
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="23" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -55,15 +60,15 @@
         <counts>
           <entry key="dummy" value="8" />
           <entry key="gradle" value="45" />
-          <entry key="groovy" value="2107" />
-          <entry key="java" value="1880" />
+          <entry key="groovy" value="2289" />
+          <entry key="java" value="2044" />
           <entry key="yml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="2152" />
-          <entry key="JAVA" value="1880" />
+          <entry key="Groovy" value="2334" />
+          <entry key="JAVA" value="2044" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="YAML" value="17" />
         </counts>
@@ -74,27 +79,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="118" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="118" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-              <folding>
-                <element signature="e#24#64#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -102,13 +90,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding>
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,7 +104,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit-dep/4.10/2c7dad0a5eb1602c6fe6b43abec8ea35805b3ae4/junit-dep-4.10-sources.jar!/org/junit/internal/requests/FilterRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -128,14 +123,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="101" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="101" />
-              <folding>
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -143,16 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/Threshold.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="34" column="73" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="73" />
-              <folding>
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#769#770#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="34" column="73" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -162,16 +141,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-              <folding>
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -179,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/AccessLogPathTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="540">
+              <caret line="75" column="55" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="75" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -197,14 +166,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="135">
               <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#206#207#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#957#958#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -583,8 +548,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/ef/input/InputValidatorTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/extract/LogExtractor.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java" />
       </list>
     </option>
@@ -600,7 +566,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -695,11 +661,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538360269006" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538407169756" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -722,7 +689,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in parser_test (2)">
+  <component name="RunManager" selected="JUnit.ColumnExtractorTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -753,15 +720,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in parser_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parser_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ColumnExtractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parser_test" />
       <extension name="coverage">
@@ -777,7 +735,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColumnExtractorTest.given a valid line when extract date should be returned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ColumnExtractorTest.given a line without right size when extract should return error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parser_test" />
       <extension name="coverage">
         <pattern>
@@ -787,7 +745,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ef.extract" />
       <option name="MAIN_CLASS_NAME" value="com.ef.extract.ColumnExtractorTest" />
-      <option name="METHOD_NAME" value="given a valid line when extract date should be returned" />
+      <option name="METHOD_NAME" value="given a line without right size when extract should return error" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColumnExtractorTest.given a line without specified column index when extract should return error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parser_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ef.extract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ef.extract" />
+      <option name="MAIN_CLASS_NAME" value="com.ef.extract.ColumnExtractorTest" />
+      <option name="METHOD_NAME" value="given a line without specified column index when extract should return error" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -818,19 +793,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in parser_test" />
       <item itemvalue="JUnit.ColumnExtractorTest" />
-      <item itemvalue="JUnit.ColumnExtractorTest.given a valid line when extract date should be returned" />
       <item itemvalue="JUnit.All in parser_test (1)" />
       <item itemvalue="JUnit.All in parser_test (2)" />
+      <item itemvalue="JUnit.ColumnExtractorTest.given a line without specified column index when extract should return error" />
+      <item itemvalue="JUnit.ColumnExtractorTest.given a line without right size when extract should return error" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ColumnExtractorTest" />
+        <item itemvalue="JUnit.ColumnExtractorTest.given a line without right size when extract should return error" />
+        <item itemvalue="JUnit.ColumnExtractorTest.given a line without specified column index when extract should return error" />
         <item itemvalue="JUnit.All in parser_test (2)" />
         <item itemvalue="JUnit.All in parser_test (1)" />
-        <item itemvalue="JUnit.ColumnExtractorTest" />
-        <item itemvalue="JUnit.ColumnExtractorTest.given a valid line when extract date should be returned" />
-        <item itemvalue="JUnit.All in parser_test" />
       </list>
     </recent_temporary>
   </component>
@@ -862,18 +837,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_parser_test - 2018.09.30 at 22h 51m 16s.xml">
-      <configuration name="All in parser_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_parser_test - 2018.09.30 at 22h 51m 40s.xml">
-      <configuration name="All in parser_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_parser_test - 2018.09.30 at 22h 52m 02s.xml">
-      <configuration name="All in parser_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_parser_test - 2018.09.30 at 22h 55m 47s.xml">
-      <configuration name="All in parser_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LogExtractorTest - 2018.09.30 at 23h 12m 02s.xml">
       <configuration name="LogExtractorTest" configurationId="JUnit" />
     </history-entry>
@@ -892,12 +855,24 @@
     <history-entry file="All_in_parser_test_(2) - 2018.09.30 at 23h 17m 00s.xml">
       <configuration name="All in parser_test (2)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ColumnExtractorTest_given_a_line_without_specified_column_index_when_extract_should_return_error - 2018.10.01 at 12h 12m 47s.xml">
+      <configuration name="ColumnExtractorTest.given a line without specified column index when extract should return error" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColumnExtractorTest_given_a_line_without_specified_column_index_when_extract_should_return_error - 2018.10.01 at 12h 18m 11s.xml">
+      <configuration name="ColumnExtractorTest.given a line without specified column index when extract should return error" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColumnExtractorTest_given_a_line_without_right_size_when_extract_should_return_error - 2018.10.01 at 12h 18m 24s.xml">
+      <configuration name="ColumnExtractorTest.given a line without right size when extract should return error" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColumnExtractorTest - 2018.10.01 at 12h 18m 29s.xml">
+      <configuration name="ColumnExtractorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="2560" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.39779875" visible="true" weight="0.14916468" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.39779875" visible="true" weight="0.1515513" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -912,7 +887,7 @@
       <window_info id="Job Explorer" order="12" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49707174" weight="0.24421053" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" visible="true" weight="0.29894736" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49707174" visible="true" weight="0.29894736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5452632" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1014,9 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#1210#1211#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1024,10 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#1510#1511#0" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1091,25 +1059,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/Threshold.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="34" column="73" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="73" />
+        <state relative-caret-position="120">
+          <caret line="20" column="118" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="118" />
           <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/AccessLogPathTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
@@ -1117,14 +1073,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="101" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="101" />
-          <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/Threshold.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="34" column="73" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -1132,52 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-          <folding>
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="118" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="118" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,23 +1097,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/AccessLogPathTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="75" column="55" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="75" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="180">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit-dep/4.10/2c7dad0a5eb1602c6fe6b43abec8ea35805b3ae4/junit-dep-4.10-sources.jar!/org/junit/internal/requests/FilterRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -13,4 +13,8 @@ public enum LogColumn {
     public Integer getColumnIndex() {
         return columnIndex;
     }
+
+    public static int totalOfColumns() {
+        return values().length;
+    }
 }

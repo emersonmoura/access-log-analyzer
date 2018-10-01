@@ -57,5 +57,17 @@ class ColumnExtractorTest extends Specification{
         extract == userAgent
     }
 
+    def 'given a line without right size when extract should return error'(){
+        given:
+        String invalidLine = '2017-01-01 00:00:11.763|192.168.234.82|"GET / HTTP/1.1"|"swcd (unknown version) CFNetwork/808.2.16 Darwin/15.6.0"'
+
+        when:
+        extractor.columnOnLine(REQUEST, invalidLine)
+
+        then:
+        def ex = thrown(IllegalStateException)
+        ex.message == 'Line without right size'
+    }
+
 
 }

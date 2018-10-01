@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 public class StartDate implements ParserInput{
 
     public static final String START_DATE = "--startDate=";
+    public static final String DATE_FORMAT = "yyyy-MM-dd.HH:mm:ss";
 
     @Override
     public void validate(String[] args) {
@@ -38,7 +39,7 @@ public class StartDate implements ParserInput{
         if(input == null) {
             return false;
         }
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd.HH:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat(DATE_FORMAT);
         try {
             format.parse(input);
             return true;

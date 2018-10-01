@@ -24,7 +24,7 @@ class InputValidatorTest extends Specification{
 
         then:
         def ex = thrown(IllegalArgumentException)
-        ex.message == 'You need to inform someone parameter'
+        ex.message == 'You need to inform some parameter'
 
         where:
         _ | params
@@ -70,6 +70,7 @@ class InputValidatorTest extends Specification{
         _ | ['--startDate=2017-01-01.13:00:00']
         _ | ['--duration=hourly']
         _ | ['--threshold=100']
+        _ | ['--accesslog=/path/to/file']
 
     }
 

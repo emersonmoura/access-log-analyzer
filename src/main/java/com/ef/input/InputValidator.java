@@ -8,7 +8,7 @@ public class InputValidator {
     public static final String VALID_INPUT_FORMAT = "--([a-zA-Z])\\w+(=(\\w.*)|=\\/(\\w.*))";
     private Collection<ParserInput> inputs;
 
-    public InputValidator(Collection<ParserInput> inputs){
+    public InputValidator(Collection<ParserInput> inputs) {
         this.inputs = inputs;
     }
 
@@ -17,19 +17,18 @@ public class InputValidator {
         inputs.forEach(input -> input.validate(args));
     }
 
-    private void checkValidInput(String[] args){
-        if(args == null || args.length <= 0){
+    private void checkValidInput(String[] args) {
+        if (args == null || args.length <= 0) {
             throwDefaultException();
-            return;
         }
         Stream.of(args).forEach(this::checkArg);
     }
 
-    private void checkArg(String arg){
-        if(arg == null || arg.isEmpty()){
+    private void checkArg(String arg) {
+        if (arg == null || arg.isEmpty()) {
             throwDefaultException();
         }
-        if(!arg.matches(VALID_INPUT_FORMAT)){
+        if (!arg.matches(VALID_INPUT_FORMAT)) {
             throw new IllegalArgumentException("Invalid parameter");
         }
     }

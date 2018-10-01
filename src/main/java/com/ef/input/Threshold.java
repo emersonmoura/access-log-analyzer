@@ -2,7 +2,7 @@ package com.ef.input;
 
 import java.util.stream.Stream;
 
-public class Threshold implements ParserInput{
+public class Threshold implements ParserInput {
 
     public static final String THRESHOLD = "--threshold=";
     public static final String EMPTY = "";
@@ -10,28 +10,28 @@ public class Threshold implements ParserInput{
 
     @Override
     public void validate(String[] args) {
-        if(args == null){
+        if (args == null) {
             throw new IllegalArgumentException("Invalid parameter threshold");
         }
 
-        if(Stream.of(args).anyMatch(this::invalidValues)){
+        if (Stream.of(args).anyMatch(this::invalidValues)) {
             throw new IllegalArgumentException("Invalid parameter threshold. The value should be a number and greater than zero");
         }
     }
 
-    public String extractValue(String arg){
+    public String extractValue(String arg) {
         return arg.replaceAll(THRESHOLD, EMPTY);
     }
 
-    private boolean invalidValues(String arg){
-        return containsDuration(arg) && !containsValidValues(arg);
+    private boolean invalidValues(String arg) {
+        return containsThreshold(arg) && !containsValidValues(arg);
     }
 
-    private boolean containsDuration(String arg){
+    private boolean containsThreshold(String arg) {
         return arg != null && arg.contains(THRESHOLD);
     }
 
-    private boolean containsValidValues(String arg){
+    private boolean containsValidValues(String arg) {
         return arg != null && extractValue(arg).matches(POSITIVE_NUMBER);
     }
 }

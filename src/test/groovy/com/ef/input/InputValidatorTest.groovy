@@ -1,9 +1,5 @@
-package com.ef
+package com.ef.input
 
-import com.ef.input.Duration
-import com.ef.input.ParserInput
-import com.ef.input.StartDate
-import com.ef.input.Threshold
 import spock.lang.Specification
 
 class InputValidatorTest extends Specification{
@@ -11,7 +7,7 @@ class InputValidatorTest extends Specification{
     InputValidator validator
 
     def setup() {
-        List<ParserInput> inputs = Arrays.asList(new Duration(), new StartDate(), new Threshold())
+        List<ParserInput> inputs = Arrays.asList(new Duration(), new StartDate(), new Threshold(), new AccessLogPath())
         validator = new InputValidator(inputs)
     }
 

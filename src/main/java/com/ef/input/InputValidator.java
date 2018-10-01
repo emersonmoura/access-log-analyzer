@@ -1,6 +1,5 @@
-package com.ef;
+package com.ef.input;
 
-import com.ef.input.ParserInput;
 import java.util.Collection;
 import java.util.stream.Stream;
 
@@ -9,7 +8,7 @@ public class InputValidator {
     public static final String VALID_INPUT_FORMAT = "--([a-zA-Z])\\w+(=(\\w.*)|=\\/(\\w.*))";
     private Collection<ParserInput> inputs;
 
-    InputValidator(Collection<ParserInput> inputs){
+    public InputValidator(Collection<ParserInput> inputs){
         this.inputs = inputs;
     }
 

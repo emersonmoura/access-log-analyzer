@@ -1,6 +1,5 @@
 package com.ef.input;
 
-import java.io.File;
 import java.util.stream.Stream;
 
 public class AccessLogPath implements ParserInput{

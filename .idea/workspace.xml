@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1975d582-4d60-415a-9e23-cea50dd657f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/groovy/com/ef/input/AccessLogPathTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/InputValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/InputValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/input/StartDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/input/StartDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/ef/InputValidatorTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/ef/InputValidatorTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/Extractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/InputValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/ef/InputValidatorTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/ef/input/InputValidatorTest.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -36,32 +39,32 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="3" />
-          <entry key="groovy" value="7" />
-          <entry key="java" value="19" />
+          <entry key="groovy" value="8" />
+          <entry key="java" value="22" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="10" />
-          <entry key="JAVA" value="19" />
+          <entry key="Groovy" value="11" />
+          <entry key="JAVA" value="22" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="2" />
+          <entry key="dummy" value="8" />
           <entry key="gradle" value="45" />
-          <entry key="groovy" value="1690" />
-          <entry key="java" value="1647" />
+          <entry key="groovy" value="2107" />
+          <entry key="java" value="1880" />
           <entry key="yml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="1735" />
-          <entry key="JAVA" value="1647" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Groovy" value="2152" />
+          <entry key="JAVA" value="1880" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="YAML" value="17" />
         </counts>
       </usages-collector>
@@ -71,9 +74,59 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="118" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="118" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="e#24#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/Duration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="255">
               <caret line="17" column="101" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="101" />
               <folding>
                 <element signature="e#791#792#0" expanded="true" />
@@ -83,24 +136,6 @@
                 <element signature="e#478#479#0" expanded="true" />
                 <element signature="e#542#543#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/ParserInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/DurationTest.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="138" column="5" lean-forward="true" selection-start-line="127" selection-start-column="3" selection-end-line="138" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -125,10 +160,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+            <state relative-caret-position="165">
+              <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#527#528#0" expanded="true" />
                 <element signature="e#589#590#0" expanded="true" />
                 <element signature="e#641#642#0" expanded="true" />
@@ -152,51 +186,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/InputValidatorTest.groovy">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/InputValidatorTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Extractor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/StartDate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#893#894#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/InputValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
+            <state relative-caret-position="150">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#206#207#0" expanded="true" />
@@ -215,6 +217,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -558,8 +561,6 @@
       <list>
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ef/Extractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ef/input/DurationTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/ParserInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/Duration.java" />
@@ -570,10 +571,21 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/ef/input/DurationTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/StartDate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/ef/input/AccessLogPathTest.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/ef/InputValidatorTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/InputValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/Extractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/LogExtractor.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/ef/LogExtractorTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/extract/LogHeader.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/ef/extract/LogExtractorTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/ef/input/InputValidatorTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/extract/LogExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java" />
       </list>
     </option>
   </component>
@@ -629,6 +641,15 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ef" type="462c0819:PsiDirectoryNode" />
+              <item name="extract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wallet-hub-parser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ef" type="462c0819:PsiDirectoryNode" />
               <item name="input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -651,6 +672,15 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="groovy" type="462c0819:PsiDirectoryNode" />
               <item name="ef" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wallet-hub-parser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="ef" type="462c0819:PsiDirectoryNode" />
+              <item name="extract" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parser" type="b2602c69:ProjectViewProjectNode" />
@@ -669,7 +699,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538358944369" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538360269006" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -692,7 +722,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in parser_test">
+  <component name="RunManager" selected="JUnit.All in parser_test (2)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -705,33 +735,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccessLogPathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in parser_test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parser_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ef.input.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ef.input" />
-      <option name="MAIN_CLASS_NAME" value="com.ef.input.AccessLogPathTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccessLogPathTest.given valid path when validate should not return error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in parser_test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parser_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ef.input.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ef.input" />
-      <option name="MAIN_CLASS_NAME" value="com.ef.input.AccessLogPathTest" />
-      <option name="METHOD_NAME" value="given valid path when validate should not return error" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -746,37 +762,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ColumnExtractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parser_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ef.input.*" />
+          <option name="PATTERN" value="com.ef.extract.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ef.input" />
-      <option name="MAIN_CLASS_NAME" value="com.ef.input.StartDateTest" />
+      <option name="PACKAGE_NAME" value="com.ef.extract" />
+      <option name="MAIN_CLASS_NAME" value="com.ef.extract.ColumnExtractorTest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColumnExtractorTest.given a valid line when extract date should be returned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parser_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ef.extract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ef.extract" />
+      <option name="MAIN_CLASS_NAME" value="com.ef.extract.ColumnExtractorTest" />
+      <option name="METHOD_NAME" value="given a valid line when extract date should be returned" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.ef in parser_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parser_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ef.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ef" />
-      <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -800,19 +818,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.com.ef in parser_test" />
-      <item itemvalue="JUnit.StartDateTest" />
-      <item itemvalue="JUnit.AccessLogPathTest" />
-      <item itemvalue="JUnit.AccessLogPathTest.given valid path when validate should not return error" />
       <item itemvalue="JUnit.All in parser_test" />
+      <item itemvalue="JUnit.ColumnExtractorTest" />
+      <item itemvalue="JUnit.ColumnExtractorTest.given a valid line when extract date should be returned" />
+      <item itemvalue="JUnit.All in parser_test (1)" />
+      <item itemvalue="JUnit.All in parser_test (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in parser_test (2)" />
+        <item itemvalue="JUnit.All in parser_test (1)" />
+        <item itemvalue="JUnit.ColumnExtractorTest" />
+        <item itemvalue="JUnit.ColumnExtractorTest.given a valid line when extract date should be returned" />
         <item itemvalue="JUnit.All in parser_test" />
-        <item itemvalue="JUnit.AccessLogPathTest" />
-        <item itemvalue="JUnit.AccessLogPathTest.given valid path when validate should not return error" />
-        <item itemvalue="JUnit.com.ef in parser_test" />
-        <item itemvalue="JUnit.StartDateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -844,27 +862,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccessLogPathTest - 2018.09.30 at 21h 56m 57s.xml">
-      <configuration name="AccessLogPathTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccessLogPathTest_given_valid_path_when_validate_should_not_return_error - 2018.09.30 at 22h 01m 15s.xml">
-      <configuration name="AccessLogPathTest.given valid path when validate should not return error" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccessLogPathTest_given_valid_path_when_validate_should_not_return_error - 2018.09.30 at 22h 04m 32s.xml">
-      <configuration name="AccessLogPathTest.given valid path when validate should not return error" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccessLogPathTest - 2018.09.30 at 22h 08m 06s.xml">
-      <configuration name="AccessLogPathTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccessLogPathTest - 2018.09.30 at 22h 08m 38s.xml">
-      <configuration name="AccessLogPathTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccessLogPathTest - 2018.09.30 at 22h 48m 26s.xml">
-      <configuration name="AccessLogPathTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccessLogPathTest - 2018.09.30 at 22h 51m 09s.xml">
-      <configuration name="AccessLogPathTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_parser_test - 2018.09.30 at 22h 51m 16s.xml">
       <configuration name="All in parser_test" configurationId="JUnit" />
     </history-entry>
@@ -874,12 +871,33 @@
     <history-entry file="All_in_parser_test - 2018.09.30 at 22h 52m 02s.xml">
       <configuration name="All in parser_test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_parser_test - 2018.09.30 at 22h 55m 47s.xml">
+      <configuration name="All in parser_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogExtractorTest - 2018.09.30 at 23h 12m 02s.xml">
+      <configuration name="LogExtractorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogExtractorTest - 2018.09.30 at 23h 12m 51s.xml">
+      <configuration name="LogExtractorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogExtractorTest_given_a_valid_line_when_extract_date_should_be_returned - 2018.09.30 at 23h 13m 50s.xml">
+      <configuration name="LogExtractorTest.given a valid line when extract date should be returned" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogExtractorTest - 2018.09.30 at 23h 14m 07s.xml">
+      <configuration name="LogExtractorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test_(1) - 2018.09.30 at 23h 14m 47s.xml">
+      <configuration name="All in parser_test (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test_(2) - 2018.09.30 at 23h 17m 00s.xml">
+      <configuration name="All in parser_test (2)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="2560" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.39779875" visible="true" weight="0.14916468" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.39779875" visible="true" weight="0.14916468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -894,7 +912,7 @@
       <window_info id="Job Explorer" order="12" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49707174" weight="0.24421053" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49707174" visible="true" weight="0.51894736" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" visible="true" weight="0.29894736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5452632" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -926,6 +944,31 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>line.split(&quot;\\|&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>line.split(&quot;\|&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>line.split(&quot;,&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>line.split(&quot;/|&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>line.split(&quot;|&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>extractValue(arg)</expression-string>
         <language-id>JAVA</language-id>
@@ -1016,25 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Extractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/DurationTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -1082,9 +1106,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/AccessLogPathTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/Duration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="255">
           <caret line="17" column="101" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="101" />
           <folding>
             <element signature="e#791#792#0" expanded="true" />
@@ -1099,10 +1130,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/AccessLogPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="165">
+          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#527#528#0" expanded="true" />
             <element signature="e#589#590#0" expanded="true" />
             <element signature="e#641#642#0" expanded="true" />
@@ -1115,27 +1145,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/AccessLogPathTest.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/InputValidatorTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/InputValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#206#207#0" expanded="true" />
@@ -1143,6 +1156,55 @@
             <element signature="e#867#868#0" expanded="true" />
             <element signature="e#957#958#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/extract/ColumnExtractorTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="118" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/input/InputValidatorTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/ColumnExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

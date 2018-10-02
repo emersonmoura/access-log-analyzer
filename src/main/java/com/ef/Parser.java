@@ -9,7 +9,8 @@ import static com.ef.di.DependencyFactory.createParserFile;
 public class Parser {
 
     public static void main(String[] args) {
-        new ParserExecutor(createInputValidator(), createParserFile(), createInput()).execute(args);
+        new ParserExecutor(createInputValidator(), createParserFile(), createInput())
+                .execute(args).forEach(System.out::println);
     }
 
 }

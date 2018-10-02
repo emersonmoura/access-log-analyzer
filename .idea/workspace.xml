@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1975d582-4d60-415a-9e23-cea50dd657f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/execute/ParserExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/execute/ParserExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/ef/execute/ParserExecutorTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/ef/execute/ParserExecutorTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/input/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/input/ConsoleInput.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -37,31 +38,31 @@
         <counts>
           <entry key="gradle" value="3" />
           <entry key="groovy" value="23" />
-          <entry key="java" value="68" />
+          <entry key="java" value="71" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="26" />
-          <entry key="JAVA" value="68" />
+          <entry key="JAVA" value="71" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="28" />
+          <entry key="dummy" value="58" />
           <entry key="gradle" value="45" />
           <entry key="groovy" value="3505" />
-          <entry key="java" value="4278" />
+          <entry key="java" value="4536" />
           <entry key="yml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="3550" />
-          <entry key="JAVA" value="4278" />
-          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="JAVA" value="4536" />
+          <entry key="PLAIN_TEXT" value="58" />
           <entry key="YAML" value="17" />
         </counts>
       </usages-collector>
@@ -73,24 +74,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <state relative-caret-position="180">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/StartDate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/execute/ParserExecutorTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="92" column="40" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+            <state relative-caret-position="223">
+              <caret line="99" column="84" lean-forward="true" selection-start-line="99" selection-start-column="84" selection-end-line="99" selection-end-column="84" />
               <folding>
                 <element signature="e#25#78#0" expanded="true" />
               </folding>
@@ -135,12 +122,53 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/execute/ParserExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="66" column="9" lean-forward="true" selection-start-line="64" selection-start-column="7" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="148">
+              <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2605#2606#0" expanded="true" />
                 <element signature="e#2682#2683#0" expanded="true" />
+                <element signature="e#3276#3277#0" expanded="true" />
+                <element signature="e#3345#3346#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/ConsoleInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/ParserInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,28 +181,6 @@
               <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/time/format/DateTimeFormatter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="1946" column="19" selection-start-line="1946" selection-start-column="16" selection-end-line="1946" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/time/LocalDateTime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="475" column="32" selection-start-line="475" selection-start-column="32" selection-end-line="475" selection-end-column="32" />
-              <folding>
-                <element signature="e#21866#21867#0" expanded="true" />
-                <element signature="e#21939#21940#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -562,7 +568,6 @@
         <option value="$PROJECT_DIR$/src/test/groovy/com/ef/input/ThresholdTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/di/DependencyFactory.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/ef/input/InputTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/InputType.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/ef/input/DurationTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/Input.java" />
@@ -570,10 +575,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/Duration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/Threshold.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/ParserInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ef/input/ConsoleInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/input/StartDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/execute/ParserFile.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/ef/execute/ParserExecutorTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/input/ConsoleInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ef/execute/ParserExecutor.java" />
       </list>
     </option>
@@ -623,42 +629,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ef" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wallet-hub-parser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ef" type="462c0819:PsiDirectoryNode" />
-              <item name="di" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wallet-hub-parser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ef" type="462c0819:PsiDirectoryNode" />
-              <item name="execute" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wallet-hub-parser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ef" type="462c0819:PsiDirectoryNode" />
-              <item name="extract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wallet-hub-parser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ef" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parser" type="b2602c69:ProjectViewProjectNode" />
@@ -715,7 +685,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538442389409" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538443693136" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -893,35 +863,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParserExecutorTest - 2018.10.01 at 21h 39m 35s.xml">
-      <configuration name="ParserExecutorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserExecutorTest - 2018.10.01 at 21h 39m 56s.xml">
-      <configuration name="ParserExecutorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserExecutorTest - 2018.10.01 at 21h 41m 07s.xml">
-      <configuration name="ParserExecutorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserExecutorTest - 2018.10.01 at 21h 43m 34s.xml">
-      <configuration name="ParserExecutorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserExecutorTest - 2018.10.01 at 22h 04m 06s.xml">
-      <configuration name="ParserExecutorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserExecutorTest - 2018.10.01 at 22h 05m 08s.xml">
-      <configuration name="ParserExecutorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserExecutorTest - 2018.10.01 at 22h 05m 21s.xml">
-      <configuration name="ParserExecutorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserExecutorTest - 2018.10.01 at 22h 05m 32s.xml">
-      <configuration name="ParserExecutorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ParserExecutorTest - 2018.10.01 at 22h 06m 00s.xml">
       <configuration name="ParserExecutorTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ParserExecutorTest - 2018.10.01 at 22h 06m 09s.xml">
       <configuration name="ParserExecutorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParserExecutorTest - 2018.10.01 at 22h 06m 18s.xml">
+      <configuration name="ParserExecutorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test - 2018.10.01 at 22h 06m 24s.xml">
+      <configuration name="All in parser_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test - 2018.10.01 at 22h 08m 44s.xml">
+      <configuration name="All in parser_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test - 2018.10.01 at 22h 11m 12s.xml">
+      <configuration name="All in parser_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test - 2018.10.01 at 22h 17m 52s.xml">
+      <configuration name="All in parser_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test - 2018.10.01 at 22h 21m 42s.xml">
+      <configuration name="All in parser_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test - 2018.10.01 at 22h 22m 12s.xml">
+      <configuration name="All in parser_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parser_test - 2018.10.01 at 22h 25m 29s.xml">
+      <configuration name="All in parser_test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1142,18 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/extract/LogColumn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1223,28 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/ParserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/ConsoleInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="24" column="81" lean-forward="true" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/time/LocalDateTime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1295,16 +1231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/execute/ParserFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1334,22 +1260,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/com/ef/execute/ParserExecutorTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="92" column="40" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+        <state relative-caret-position="223">
+          <caret line="99" column="84" lean-forward="true" selection-start-line="99" selection-start-column="84" selection-end-line="99" selection-end-column="84" />
           <folding>
             <element signature="e#25#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/InputValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/ParserInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/input/ConsoleInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/execute/ParserExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="66" column="9" lean-forward="true" selection-start-line="64" selection-start-column="7" selection-end-line="66" selection-end-column="9" />
+        <state relative-caret-position="148">
+          <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2605#2606#0" expanded="true" />
             <element signature="e#2682#2683#0" expanded="true" />
+            <element signature="e#3276#3277#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
           </folding>
         </state>
       </provider>

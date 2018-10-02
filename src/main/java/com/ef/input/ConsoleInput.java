@@ -22,10 +22,9 @@ public class ConsoleInput {
 
     private ParserInput getInputParse(String arg){
         return inputs.stream()
-                .filter(input -> input.InputNameIs(arg)).findFirst().orElse(null);
-
+                .filter(input -> input.InputNameIs(arg))
+                .findFirst().orElseThrow(()-> new IllegalStateException("Invalid input"));
     }
-
 
 }
 

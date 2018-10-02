@@ -6,11 +6,11 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import javafx.util.Pair;
 
-public class Input {
+public class ConsoleInput {
 
     private final Collection<ParserInput> inputs;
 
-    public Input(Collection<ParserInput> inputs) {
+    public ConsoleInput(Collection<ParserInput> inputs) {
         this.inputs = inputs;
     }
 
@@ -22,7 +22,7 @@ public class Input {
 
     private ParserInput getInputParse(String arg){
         return inputs.stream()
-                .filter(a-> a.InputNameIs(arg)).findFirst().orElse(null);
+                .filter(input -> input.InputNameIs(arg)).findFirst().orElse(null);
 
     }
 

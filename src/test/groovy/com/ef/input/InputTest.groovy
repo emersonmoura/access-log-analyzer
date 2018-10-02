@@ -5,7 +5,7 @@ import spock.lang.Specification
 
 class InputTest extends Specification {
 
-    Input input
+    ConsoleInput input
 
     def setup(){
         input = DependencyFactory.createInput()

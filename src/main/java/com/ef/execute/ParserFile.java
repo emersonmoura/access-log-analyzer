@@ -11,7 +11,7 @@ public class ParserFile {
         try {
             return Files.lines(Paths.get(path));
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.printf("File not found%s%n", e.getMessage());
             return Stream.empty();
         }
     }

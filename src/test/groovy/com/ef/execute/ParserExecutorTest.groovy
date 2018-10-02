@@ -15,14 +15,16 @@ class ParserExecutorTest  extends Specification {
 
     def setup(){
         parserExecutor = new ParserExecutor(validatorMock, fileMock, createInput())
-        fileMock.lines(_) >> Stream.empty()
     }
 
     def 'given a valid line when extract date should be returned'(){
         given:
         String expectedIp = '192.168.234.82'
         String path = '/path/to/file'
-        Stream fileContent = Stream.of("""2017-01-01 00:00:11.763|${expectedIp}|"GET / HTTP/1.1"|200|"swcd (unknown version) CFNetwork/808.2.16 Darwin/15.6.0""".toString())
+        Stream fileContent = Stream.of(
+                """2017-01-01 00:00:11.763|${expectedIp}|"GET / HTTP/1.1"|200|"swcd (unknown version) CFNetwork/808.2.16 Darwin/15.6.0""".toString(),
+                """2017-01-01 00:00:21.164|${expectedIp}|"GET / HTTP/1.1"|200|"swcd (unknown version) CFNetwork/808.2.16 Darwin/15.6.0""".toString()
+        )
         fileMock.lines(path) >> fileContent
         String[] args = ["--accesslog=${path}",'--startDate=2017-01-01.00:00:00','--duration=hourly','--threshold=1']
 
@@ -30,6 +32,6 @@ class ParserExecutorTest  extends Specification {
         def result = parserExecutor.execute(args)
 
         then:
-        result.find() == expectedIp
+        result.count { it == expectedIp } == 2
     }
 }

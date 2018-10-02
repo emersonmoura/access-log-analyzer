@@ -22,7 +22,6 @@ public class BlockedIpRepository {
                 System.out.println("IP registered");
             }
         }catch (MySQLIntegrityConstraintViolationException e){
-            System.out.println("Blocked IP already registered");
         }
     }
 }

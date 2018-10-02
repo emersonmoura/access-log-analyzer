@@ -23,7 +23,6 @@ public class IpRequestRepository {
                 System.out.println("IP request registered!");
             }
         } catch (MySQLIntegrityConstraintViolationException e) {
-            System.out.println("IP request already registered");
         }
     }
 }

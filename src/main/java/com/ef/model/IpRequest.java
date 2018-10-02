@@ -8,7 +8,7 @@ import lombok.Data;
 public class IpRequest {
 
 
-    public static final String DATE_FORMAT = "YYYY-MM-DD HH:MI:SS";
+    public static final String DATE_FORMAT = "yyyy-MM-dd.HH:mm:ss.SSS";
 
     public IpRequest(LocalDateTime date, String ip, String status, String request, String userAgent) {
         this.date = date;

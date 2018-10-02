@@ -3,6 +3,7 @@ package com.ef.db;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import java.beans.PropertyVetoException;
 import java.sql.Connection;
+import java.sql.SQLException;
 import lombok.SneakyThrows;
 
 public class DataBaseConnection {
@@ -11,19 +12,33 @@ public class DataBaseConnection {
     public static final String JDBC_MYSQL_LOCALHOST_PARSER = "jdbc:mysql://localhost/parser";
     public static final String ROOT = "root";
     public static final String PASSWORD = "123456";
-    public static final ComboPooledDataSource cpds = createPooledDataSource();
+    public static ComboPooledDataSource cpds ;
+    public static Connection conn;
 
     @SneakyThrows
-    public static Connection createConnection() {
-        if(cpds != null) {
-            Connection connection = cpds.getConnection();
-            connection.setAutoCommit(true);
-            return connection;
+    public static Connection getConnection() {
+        if(cpds == null){
+            cpds = createPooledDataSource();
         }
-        return null;
+        if(cpds != null && conn == null) {
+            conn = cpds.getConnection();
+            conn.setAutoCommit(true);
+            return conn;
+        }
+        return conn;
     }
 
     public static void closeConnection(){
+        if(conn != null){
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void closePool(){
         if(cpds != null){
             cpds.close();
         }

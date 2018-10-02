@@ -10,10 +10,13 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    extraLibs
+}
+
 dependencies {
-    compile 'mysql:mysql-connector-java:5.1.44'
-    compile 'com.mchange:c3p0:0.9.5.2'
-    compile 'joda-time:joda-time:2.10'
+    extraLibs 'mysql:mysql-connector-java:5.1.44'
+    extraLibs 'com.mchange:c3p0:0.9.5.2'
 
     compileOnly 'org.projectlombok:lombok:1.16.18'
 
@@ -21,4 +24,12 @@ dependencies {
     testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
     testCompile "org.hamcrest:hamcrest-core:1.3"
     testRuntime "cglib:cglib-nodep:3.2.4"
+    configurations.compile.extendsFrom(configurations.extraLibs)
+}
+
+
+jar {
+    from {
+        configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }

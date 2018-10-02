@@ -1,7 +1,9 @@
 package com.ef.di;
 
+import com.ef.db.BlockedIpRepository;
 import com.ef.db.DataBaseConnection;
 import com.ef.db.IpRequestRepository;
+import com.ef.execute.BlockedIpService;
 import com.ef.execute.ParserExecutor;
 import com.ef.execute.ParserFile;
 import com.ef.input.AccessLogPath;
@@ -38,6 +40,14 @@ public class DependencyFactory {
     }
 
     public static IpRequestRepository createIpRequestRepository(){
-        return new IpRequestRepository(DataBaseConnection.createConnection());
+        return new IpRequestRepository(DataBaseConnection.getConnection());
+    }
+
+    public static BlockedIpRepository createdBlockedIpRepository(){
+        return new BlockedIpRepository(DataBaseConnection.getConnection());
+    }
+
+    public static BlockedIpService createBlockedIpService(){
+        return new BlockedIpService(createdBlockedIpRepository(), createConsoleInput());
     }
 }

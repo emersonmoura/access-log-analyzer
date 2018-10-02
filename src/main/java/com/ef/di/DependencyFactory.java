@@ -1,5 +1,7 @@
 package com.ef.di;
 
+import com.ef.db.DataBaseConnection;
+import com.ef.db.IpRequestRepository;
 import com.ef.execute.ParserExecutor;
 import com.ef.execute.ParserFile;
 import com.ef.input.AccessLogPath;
@@ -15,7 +17,7 @@ import java.util.List;
 public class DependencyFactory {
 
     public static ParserExecutor createParserExecutor(){
-        return new ParserExecutor(createInputValidator(), createParserFile(), createConsoleInput());
+        return new ParserExecutor(createInputValidator(), createParserFile(), createConsoleInput(), createIpRequestRepository());
     }
 
     public static InputValidator createInputValidator(){
@@ -33,5 +35,9 @@ public class DependencyFactory {
 
     public static ConsoleInput createConsoleInput(){
         return new ConsoleInput(createParserInputs());
+    }
+
+    public static IpRequestRepository createIpRequestRepository(){
+        return new IpRequestRepository(DataBaseConnection.createConnection());
     }
 }

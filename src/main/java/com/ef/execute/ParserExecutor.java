@@ -1,5 +1,6 @@
 package com.ef.execute;
 
+import com.ef.db.IpRequestRepository;
 import com.ef.extract.ColumnExtractor;
 import com.ef.extract.LogColumn;
 import com.ef.input.ConsoleInput;
@@ -7,6 +8,7 @@ import com.ef.input.Duration;
 import com.ef.input.InputType;
 import com.ef.input.InputValidator;
 import com.ef.input.StartDate;
+import com.ef.model.IpRequest;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Collection;
@@ -28,15 +30,18 @@ public class ParserExecutor {
     private InputValidator inputValidator;
     private ParserFile file;
     private ConsoleInput consoleInput;
+    private IpRequestRepository requestRepository;
 
     private ConcurrentHashMap<String, Long> ipCount = new ConcurrentHashMap<>();
 
     public ParserExecutor(InputValidator inputValidator,
                           ParserFile file,
-                          ConsoleInput consoleInput){
+                          ConsoleInput consoleInput,
+                          IpRequestRepository requestRepository){
         this.inputValidator = inputValidator;
         this.file = file;
         this.consoleInput = consoleInput;
+        this.requestRepository = requestRepository;
     }
 
     public Collection<String> execute(String[] args) {
@@ -48,9 +53,22 @@ public class ParserExecutor {
         String path = consoleInputs.get(ACCESS_LOG);
         String threshold = consoleInputs.get(THRESHOLD);
         return file.lines(path)
-                .filter(line -> lineDateAccordingInputParams(line, consoleInputs))
+                .filter(line -> {
+                    sendToDataBase(line);
+                    return lineDateAccordingInputParams(line, consoleInputs);
+                })
                 .filter(line -> matchCountIpEvents(line, threshold))
                 .map(this::getIp).collect(Collectors.toSet());
+    }
+
+    private void sendToDataBase(String line){
+        IpRequest ipRequest = new IpRequest(createDate(
+                getField(line, DATE), LINE_DATE_FORMAT),
+                getField(line, IP),
+                getField(line, STATUS),
+                getField(line, REQUEST),
+                getField(line, USER_AGENT));
+        requestRepository.save(ipRequest);
     }
 
     private boolean matchCountIpEvents(String line, String threshold) {

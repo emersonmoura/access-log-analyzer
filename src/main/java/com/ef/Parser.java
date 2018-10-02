@@ -1,5 +1,7 @@
 package com.ef;
 
+import com.ef.db.DataBaseConnection;
+
 import static com.ef.di.DependencyFactory.createParserExecutor;
 
 public class Parser {
@@ -9,6 +11,8 @@ public class Parser {
             createParserExecutor().execute(args).forEach(System.out::println);
         } catch (RuntimeException e) {
             System.out.println(e.getMessage());
+        }finally {
+            DataBaseConnection.closeConnection();
         }
     }
 

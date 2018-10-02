@@ -11,7 +11,10 @@ repositories {
 }
 
 dependencies {
-    compile 'mysql:mysql-connector-java:5.1.6'
+    compile 'mysql:mysql-connector-java:5.1.44'
+    compile 'com.mchange:c3p0:0.9.5.2'
+    compile 'joda-time:joda-time:2.10'
+
     compileOnly 'org.projectlombok:lombok:1.16.18'
 
     testCompile "org.codehaus.groovy:groovy:2.4.7"

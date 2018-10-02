@@ -29,7 +29,7 @@ public class InputValidator {
             throwDefaultException();
         }
         if (!arg.matches(VALID_INPUT_FORMAT)) {
-            throw new IllegalArgumentException("Invalid parameter");
+            throw new IllegalArgumentException(String.format("Invalid parameter syntax %s", arg));
         }
     }
 

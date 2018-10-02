@@ -1,5 +1,6 @@
 package com.ef.di;
 
+import com.ef.execute.ParserExecutor;
 import com.ef.execute.ParserFile;
 import com.ef.input.AccessLogPath;
 import com.ef.input.Duration;
@@ -12,6 +13,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class DependencyFactory {
+
+    public static ParserExecutor createParserExecutor(){
+        return new ParserExecutor(createInputValidator(), createParserFile(), createConsoleInput());
+    }
 
     public static InputValidator createInputValidator(){
         List<ParserInput> inputs = createParserInputs();
@@ -26,7 +31,7 @@ public class DependencyFactory {
         return new ParserFile();
     }
 
-    public static ConsoleInput createInput(){
+    public static ConsoleInput createConsoleInput(){
         return new ConsoleInput(createParserInputs());
     }
 }

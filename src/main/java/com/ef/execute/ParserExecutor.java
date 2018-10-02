@@ -49,20 +49,20 @@ public class ParserExecutor {
         String threshold = consoleInputs.get(THRESHOLD);
         return file.lines(path)
                 .filter(line -> lineDateAccordingInputParams(line, consoleInputs))
-                .filter(line -> countIpEvents(line, threshold))
-                .map(this::getIp).collect(Collectors.toList());
+                .filter(line -> matchCountIpEvents(line, threshold))
+                .map(this::getIp).collect(Collectors.toSet());
     }
 
-    private boolean countIpEvents(String line, String threshold) {
+    private boolean matchCountIpEvents(String line, String threshold) {
         String ip = getIp(line);
         ipCount.put(ip, ipCount.getOrDefault(ip, ZERO) + ONE);
         return ipCount.get(ip) >= Integer.valueOf(threshold);
     }
 
     private boolean lineDateAccordingInputParams(String line, Map<InputType, String> consoleInputs){
-        LocalDateTime startDate = getDate(consoleInputs.get(START_DATE), StartDate.DATE_FORMAT);
+        LocalDateTime startDate = createDate(consoleInputs.get(START_DATE), StartDate.DATE_FORMAT);
         LocalDateTime durationDate = createDurationTime(consoleInputs.get(DURATION), startDate);
-        LocalDateTime lineDate = getDate(getField(line, DATE), LINE_DATE_FORMAT);
+        LocalDateTime lineDate = createDate(getField(line, DATE), LINE_DATE_FORMAT);
         return lineDate.isBefore(durationDate) && lineDate.isAfter(startDate);
     }
 
@@ -73,17 +73,17 @@ public class ParserExecutor {
         return startDate.plusDays(ONE);
     }
 
-    private String getIp(String line){
-        return getField(line, IP);
-    }
-
-    private LocalDateTime getDate(String date, String pattern) {
+    private LocalDateTime createDate(String date, String pattern) {
         DateTimeFormatter lineDateFormatter = DateTimeFormatter.ofPattern(pattern);
         return LocalDateTime.parse(date, lineDateFormatter);
     }
 
     private String getField(String line, LogColumn date) {
         return new ColumnExtractor().columnOnLine(date, line);
+    }
+
+    private String getIp(String line){
+        return getField(line, IP);
     }
 }
 

@@ -1,16 +1,15 @@
 package com.ef;
 
-import com.ef.execute.ParserExecutor;
-
-import static com.ef.di.DependencyFactory.createInput;
-import static com.ef.di.DependencyFactory.createInputValidator;
-import static com.ef.di.DependencyFactory.createParserFile;
+import static com.ef.di.DependencyFactory.createParserExecutor;
 
 public class Parser {
 
     public static void main(String[] args) {
-        new ParserExecutor(createInputValidator(), createParserFile(), createInput())
-                .execute(args).forEach(System.out::println);
+        try {
+            createParserExecutor().execute(args).forEach(System.out::println);
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 }

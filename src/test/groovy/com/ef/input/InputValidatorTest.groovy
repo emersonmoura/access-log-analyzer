@@ -40,7 +40,7 @@ class InputValidatorTest extends Specification {
 
         then:
         def ex = thrown(IllegalArgumentException)
-        ex.message == 'Invalid parameter'
+        ex.message == "Invalid parameter syntax ${params[0]}"
 
         where:
         _ | params

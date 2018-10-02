@@ -1,7 +1,7 @@
 package com.ef.execute
 
 
-import static com.ef.di.DependencyFactory.createInput
+import static com.ef.di.DependencyFactory.createConsoleInput
 import com.ef.input.InputValidator
 import spock.lang.Specification
 
@@ -14,7 +14,7 @@ class ParserExecutorTest  extends Specification {
     ParserFile fileMock = Mock(ParserFile)
 
     def setup(){
-        parserExecutor = new ParserExecutor(validatorMock, fileMock, createInput())
+        parserExecutor = new ParserExecutor(validatorMock, fileMock, createConsoleInput())
     }
 
     def 'given a valid line when startDate match should return IP result'(){

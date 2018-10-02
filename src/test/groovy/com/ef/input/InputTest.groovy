@@ -8,7 +8,7 @@ class InputTest extends Specification {
     ConsoleInput input
 
     def setup(){
-        input = DependencyFactory.createInput()
+        input = DependencyFactory.createConsoleInput()
     }
 
     def 'given valid args with access log should return access log path in mapping values'(){
@@ -16,8 +16,7 @@ class InputTest extends Specification {
         String logPath='/path/'
         String startDate = '2017-01-01.00:00:00'
         String duration='hourly'
-        String threshold='100'
-        String[] args = ["--accesslog=${logPath}","--startDate=${startDate}","--duration=${duration}","--threshold=${threshold}"]
+        String[] args = ["--accesslog=${logPath}","--startDate=${startDate}","--duration=${duration}"]
 
         when:
         def result = input.extract(args)
@@ -63,5 +62,24 @@ class InputTest extends Specification {
 
         then:
         result.get(InputType.THRESHOLD) == threshold
+    }
+
+
+    def 'given invalid args should return error'(){
+        given:
+        String[] args = [param]
+
+        when:
+        input.extract(args)
+
+        then:
+        def ex = thrown(IllegalStateException)
+        ex.message == "Invalid input parameter ${param}"
+
+        where:
+        _ | param
+        _ | '-startDat'
+        _ | '-durtion'
+        _ | 'threshld'
     }
 }

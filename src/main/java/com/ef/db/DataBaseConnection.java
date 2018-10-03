@@ -22,7 +22,6 @@ public class DataBaseConnection {
         }
         if(cpds != null && conn == null) {
             conn = cpds.getConnection();
-            conn.setAutoCommit(true);
             return conn;
         }
         return conn;
@@ -31,6 +30,7 @@ public class DataBaseConnection {
     public static void closeConnection(){
         if(conn != null){
             try {
+                conn.commit();
                 conn.close();
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -51,9 +51,9 @@ public class DataBaseConnection {
         cpds.setJdbcUrl(JDBC_MYSQL_LOCALHOST_PARSER);
         cpds.setUser(ROOT);
         cpds.setPassword(PASSWORD);
-        cpds.setMinPoolSize(2);
-        cpds.setAcquireIncrement(1);
-        cpds.setMaxPoolSize(5);
+        cpds.setMinPoolSize(5);
+        cpds.setAcquireIncrement(2);
+        cpds.setMaxPoolSize(15);
         return cpds;
     } catch (PropertyVetoException e) {
         e.printStackTrace();

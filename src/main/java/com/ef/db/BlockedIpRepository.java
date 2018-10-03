@@ -18,11 +18,9 @@ public class BlockedIpRepository {
     public void save(BlockedIp blockedIp){
         try {
             try (Statement statement = connection.createStatement()) {
-                statement.executeUpdate(String.format("INSERT INTO BLOCKED_IP (IP, COMMENT) VALUES ('%s', '%s')", blockedIp.getIp(), blockedIp.getComment()));
-                System.out.println("IP registered");
+                statement.addBatch(String.format("INSERT INTO BLOCKED_IP (IP, COMMENT) VALUES ('%s', '%s')", blockedIp.getIp(), blockedIp.getComment()));
             }
         }catch (MySQLIntegrityConstraintViolationException e){
-            System.out.println("Blocked IP already registered");
         }
     }
 }

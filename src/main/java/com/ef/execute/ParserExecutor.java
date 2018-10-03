@@ -46,29 +46,35 @@ public class ParserExecutor {
 
     public Collection<String> execute(String[] args) {
         inputValidator.validate(args);
-        return execute(consoleInput.extract(args));
+        System.out.println("Processing...");
+        Collection<String> ips = execute(consoleInput.extract(args));
+        requestRepository.flush();
+        requestRepository.close();
+        return ips;
     }
 
     private Collection<String> execute(Map<InputType, String> consoleInputs) {
         String path = consoleInputs.get(ACCESS_LOG);
         String threshold = consoleInputs.get(THRESHOLD);
+        int[] count = new int[]{1};
         return file.lines(path)
                 .filter(line -> {
-                    sendToDataBase(line);
+                    sendToDataBase(line, count);
                     return lineDateAccordingInputParams(line, consoleInputs);
                 })
                 .filter(line -> matchCountIpEvents(line, threshold))
                 .map(this::getIp).collect(Collectors.toSet());
     }
 
-    private void sendToDataBase(String line){
+    private void sendToDataBase(String line, int[] count){
         IpRequest ipRequest = new IpRequest(createDate(
                 getField(line, DATE), LINE_DATE_FORMAT),
                 getField(line, IP),
                 getField(line, STATUS),
                 getField(line, REQUEST),
                 getField(line, USER_AGENT));
-        requestRepository.save(ipRequest);
+        count[0] = count[0] + ONE;
+        requestRepository.addBatch(ipRequest, count[0]);
     }
 
     private boolean matchCountIpEvents(String line, String threshold) {

@@ -22,7 +22,7 @@ public class DataBaseConnection {
         }
         if(cpds != null && conn == null) {
             conn = cpds.getConnection();
-            conn.setAutoCommit(true);
+            conn.setAutoCommit(false);
             return conn;
         }
         return conn;
@@ -31,6 +31,7 @@ public class DataBaseConnection {
     public static void closeConnection(){
         if(conn != null){
             try {
+                conn.commit();
                 conn.close();
             } catch (SQLException e) {
                 e.printStackTrace();

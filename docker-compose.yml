@@ -8,6 +8,8 @@ services:
       MYSQL_ROOT_PASSWORD: 123456
     ports:
     - 3306:3306
+    volumes:
+    - ./mysqlconf:/etc/mysql/conf.d/
 
   adminer:
     image: adminer

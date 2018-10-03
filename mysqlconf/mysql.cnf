@@ -1,0 +1,8 @@
+[mysqld]
+max_allowed_packet=1G
+innodb_doublewrite = 0
+innodb_buffer_pool_size = 2G
+innodb_flush_log_at_trx_commit = 0
+innodb_log_file_size = 2G
+log-bin = 0
+innodb_flush_log_at_trx_commit = 0

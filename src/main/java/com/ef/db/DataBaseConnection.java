@@ -9,7 +9,7 @@ import lombok.SneakyThrows;
 public class DataBaseConnection {
 
     public static final String COM_MYSQL_JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    public static final String JDBC_MYSQL_LOCALHOST_PARSER = "jdbc:mysql://localhost/parser";
+    public static final String JDBC_MYSQL_LOCALHOST_PARSER = "jdbc:mysql://localhost/PARSER";
     public static final String ROOT = "root";
     public static final String PASSWORD = "123456";
     public static ComboPooledDataSource cpds ;
